@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:gravity="center"
+  android:background="@drawable/electric"
+  >
+    <Button android:background="@android:color/transparent" android:text="Scrapbook" android:id="@+id/button2" android:layout_height="match_parent" android:layout_width="155dp"  android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="onClick" android:textSize="30dip" android:textColor="#ff4500" android:textStyle="bold"></Button>
+    <Button android:text="Planner" android:hapticFeedbackEnabled="true" android:id="@+id/button1" android:onClick="onClick" android:layout_height="match_parent" android:layout_width="155dp" android:textSize="30dip" android:textStyle="bold" android:background="@android:color/transparent" android:textColor="#ff4500"></Button>
+    
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <Button android:text="  Next  " android:layout_height="wrap_content" android:id="@+id/nextViewer" android:layout_width="wrap_content" android:onClick="onClick" android:layout_alignBaseline="@+id/viewStopAudioButton" android:layout_alignBottom="@+id/viewStopAudioButton" android:layout_alignParentRight="true"></Button>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:id="@+id/dateViewer"></TextView>
+    <Button android:text="Previous" android:layout_height="wrap_content" android:id="@+id/previousViewer" android:layout_width="wrap_content" android:onClick="onClick" android:layout_below="@+id/dateViewer" android:layout_alignParentLeft="true"></Button>
+    <Button android:text="Stop Audio" android:layout_height="wrap_content" android:id="@+id/viewStopAudioButton" android:layout_width="wrap_content" android:onClick="onClick" android:layout_below="@+id/dateViewer" android:layout_alignLeft="@+id/viewPlayVideoButton"></Button>
+    <Button android:text="Stop Video" android:layout_height="wrap_content" android:id="@+id/viewStopVideoButton" android:layout_width="wrap_content" android:onClick="onClick" android:layout_alignBaseline="@+id/viewStopAudioButton" android:layout_alignBottom="@+id/viewStopAudioButton" android:layout_alignLeft="@+id/viewPlayAudioButton"></Button>
+    <Button android:text="Play Audio" android:layout_height="wrap_content" android:id="@+id/viewPlayAudioButton" android:layout_width="wrap_content" android:onClick="Play Audio" android:layout_alignBaseline="@+id/viewStopAudioButton" android:layout_alignBottom="@+id/viewStopAudioButton" android:layout_alignLeft="@+id/viewPlayVideoButton"></Button>
+    <Button android:text="Play Video" android:layout_height="wrap_content" android:id="@+id/viewPlayVideoButton" android:layout_width="wrap_content" android:onClick="onClick" android:layout_below="@+id/dateViewer" android:layout_centerHorizontal="true"></Button>
+    <SurfaceView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/inputViewerSurface" android:layout_alignParentLeft="true" android:layout_alignTop="@+id/noteViewer" android:layout_alignBottom="@+id/noteViewer"></SurfaceView>
+    <EditText android:layout_width="match_parent" android:layout_height="380dp" android:id="@+id/noteViewer" android:layout_below="@+id/nextViewer" android:layout_alignParentLeft="true"></EditText>
+    <ImageView android:layout_width="fill_parent" android:id="@+id/photoViewer" android:layout_height="380dp" android:layout_alignParentLeft="true" android:layout_alignBottom="@+id/noteViewer"></ImageView>
+</RelativeLayout>

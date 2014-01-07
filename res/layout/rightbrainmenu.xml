@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <Button android:id="@+id/videoButton" android:onClick="onClick" android:layout_height="60dp" android:layout_width="60dp" android:background="@drawable/purple_eye" android:layout_centerVertical="true" android:layout_alignLeft="@+id/speechButton"></Button>
+    <Button android:id="@+id/calendarButton" android:onClick="onClick" android:background="@drawable/blue_heart" android:layout_above="@+id/speechButton" android:layout_centerHorizontal="true" android:layout_marginBottom="16dp" android:layout_height="70dp" android:layout_width="70dp"></Button>
+    <Button android:id="@+id/photoButton" android:onClick="onClick" android:layout_height="60dp" android:layout_width="60dp" android:background="@drawable/blue_eye" android:layout_alignBaseline="@+id/videoButton" android:layout_alignBottom="@+id/videoButton" android:layout_alignParentLeft="true" android:layout_marginLeft="18dp"></Button>
+    <Button android:id="@+id/speechButton" android:onClick="onClick" android:layout_height="60dp" android:layout_width="60dp" android:background="@drawable/listen" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginRight="32dp" android:layout_marginBottom="37dp"></Button>
+    <Button android:id="@+id/noteButton" android:onClick="onClick" android:layout_height="70dp" android:layout_width="60dp" android:background="@drawable/hand" android:layout_alignBottom="@+id/speechButton" android:layout_alignLeft="@+id/photoButton"></Button>
+    <ImageView android:src="@drawable/mind" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="48dp"></ImageView>
+    <TextView android:text="Journal Entry" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView3" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/noteButton" android:layout_alignParentLeft="true"></TextView>
+    <TextView android:text="Record Audio" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView4" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignBaseline="@+id/textView3" android:layout_alignBottom="@+id/textView3" android:layout_alignParentRight="true"></TextView>
+    <TextView android:text="Record Video" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/videoButton" android:layout_alignLeft="@+id/textView4"></TextView>
+    <TextView android:text="Shoot Photo" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/photoButton" android:layout_alignLeft="@+id/photoButton"></TextView>
+    <TextView android:text="View Memories" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView5" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_above="@+id/speechButton" android:layout_toLeftOf="@+id/textView4"></TextView>
+    <ImageView android:src="@drawable/date_icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_marginTop="25dp" android:layout_alignBottom="@+id/imageView1" android:layout_alignParentLeft="true" android:visibility="invisible" android:id="@+id/exclamation"></ImageView>
+    
+</RelativeLayout>

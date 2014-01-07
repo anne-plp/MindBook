@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:weightSum="1"
+   android:background="@drawable/listen">
+   
+<TextView 
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   />
+<Button 
+   android:id="@+id/record"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:text="Record"
+   />
+<MediaController android:layout_weight="0.29" android:layout_height="wrap_content" android:id="@+id/mediaController1" android:layout_width="198dp"></MediaController>
+</LinearLayout>

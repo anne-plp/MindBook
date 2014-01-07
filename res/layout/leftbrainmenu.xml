@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:id="@+id/planDate"></TextView>
+    <TimePicker android:id="@+id/planningTimePicker" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/planDate" android:layout_alignParentLeft="true" android:layout_marginTop="30dp" android:layout_alignParentRight="true"></TimePicker>
+    <EditText android:id="@+id/planField" android:layout_width="wrap_content" android:layout_below="@+id/planningTimePicker" android:layout_alignParentLeft="true" android:layout_marginTop="27dp" android:layout_alignParentRight="true" android:layout_height="100dp"></EditText>
+    <Button android:onClick="onClick" android:id="@+id/planButton" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Plan Event!" android:layout_below="@+id/planField" android:layout_alignParentLeft="true" android:layout_marginTop="28dp"></Button>
+    <Button android:layout_height="wrap_content" android:layout_below="@+id/planButton" android:layout_centerHorizontal="true" android:layout_marginTop="16dp" android:layout_width="match_parent" android:text="See This Day's Schedule" android:id="@+id/planScheduleButton" android:onClick="onClick"></Button>
+    
+</RelativeLayout>

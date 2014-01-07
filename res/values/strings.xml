@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MindBook</string>
+    <string name="LeftBrain">LeftBrain</string>
+    <string name="RightBrain">RightBrain</string>
+    <string name="picture">Take Picture</string>
+    <string name="video">Record Video</string>
+    <string name="speech">Record Audio</string>
+    <string name="note">Write Note</string>
+    <string name="seeCalendar">See Calendar</string>
+    <string name="mainMenu">Go To Main Menu</string>
+        <string name="hello">Open calendar</string>
+    
+    <color name="text_color">#31D1F1</color>
+<color name="white">#ffffff</color>
+<string name="open">Open</string>
+</resources>
+
+
